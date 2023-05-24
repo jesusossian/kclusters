@@ -1,0 +1,61 @@
+Version identifier: 20.1.0.0 | 2020-11-10 | 9bedb6d68
+CPXPARAM_Threads                                 1
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_MIP_Tolerances_MIPGap                   9.9999999999999995e-07
+Tried aggregator 1 time.
+MIP Presolve eliminated 40 rows and 820 columns.
+Reduced MIP has 2381 rows, 820 columns, and 7100 nonzeros.
+Reduced MIP has 40 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (3.17 ticks)
+Found incumbent of value 3.070000 after 0.00 sec. (4.68 ticks)
+Probing time = 0.00 sec. (0.36 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 2381 rows, 820 columns, and 7100 nonzeros.
+Reduced MIP has 40 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (3.90 ticks)
+Probing time = 0.00 sec. (0.36 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.02 sec. (49.51 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                            3.0700       88.1500              --- 
+      0     0       21.4890    35        3.0700       21.4890      676  599.97%
+*     0+    0                           10.4700       21.4890           105.24%
+      0     0       21.1251    35       10.4700      Fract: 1      819  101.77%
+*     0+    0                           11.5600       21.1251            82.74%
+      0     0       21.0215    35       11.5600       Cuts: 2      890   81.85%
+*     0+    0                           13.0100       21.0215            61.58%
+      0     0       20.9703    35       13.0100   LiftProj: 1      930   61.19%
+*     0+    0                           13.6400       20.9703            53.74%
+      0     0       20.9565    35       13.6400   LiftProj: 1      960   53.64%
+Detecting symmetries...
+      0     2       20.9565    35       13.6400       20.9530      960   53.61%
+Elapsed time = 0.16 sec. (339.13 ticks, tree = 0.01 MB, solutions = 5)
+      8    10       16.7028    27       13.6400       19.6204     5032   43.84%
+     20    18       16.3207    28       13.6400       19.5255     8722   43.15%
+     33    26       16.0586    29       13.6400       18.8321    11866   38.07%
+*    41    32      integral     0       13.6800       18.8321    12942   37.66%
+     50    35       17.3440    28       13.6800       18.7054    15783   36.74%
+*    70+   45                           14.0300       18.2237            29.89%
+     70    47       14.3750    24       14.0300       18.2237    19701   29.89%
+*    79    36      integral     0       14.9700       18.1402    21147   21.18%
+     92    39       16.8181    32       14.9700       17.7359    23413   18.48%
+*   110+   36                           15.5100       17.3506            11.87%
+*   110+   30                           16.0100       17.3506             8.37%
+    111    33       16.4186    30       16.0100       17.3239    27142    8.21%
+
+Lift and project cuts applied:  2
+Gomory fractional cuts applied:  2
+
+Root node processing (before b&c):
+  Real time             =    0.16 sec. (339.21 ticks)
+Sequential b&c:
+  Real time             =    0.80 sec. (2018.38 ticks)
+                          ------------
+Total (root+branch&cut) =    0.96 sec. (2357.59 ticks)
+status = OPTIMAL
